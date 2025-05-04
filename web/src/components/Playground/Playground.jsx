@@ -32,7 +32,7 @@ export const Playground = () => {
 
         if (!module.default) {
           throw new Error(
-            `Component "${formattedName}" does not have a default export`,
+            `Component "${formattedName}" does not have a default export`
           );
         }
 

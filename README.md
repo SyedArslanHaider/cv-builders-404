@@ -4,6 +4,8 @@
 
 This repository contains a starter template for your final project, including both a React frontend and an Express backend. The project is designed to be modular, scalable, and easy to maintain.
 
+To get started with this template just use the [Github UI](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) to make a copy and get coding 🚀 
+
 ## Project Structure
 
 ```
@@ -30,10 +32,18 @@ final-project-starter/
    ```bash
    cd final-project-starter
    ```
-3. Install dependencies for both the frontend and backend:
+3. Install dependencies in the root directory:
+   ```bash
+   npm install
+   ```
+4. Install dependencies for both the frontend and backend:
    ```bash
    npm install --prefix web
    npm install --prefix api
+   ```
+5. Run the prepare script to set up Husky:
+   ```bash
+   npm run prepare
    ```
 
 ### Development
