@@ -1,7 +1,8 @@
 // Entry point for the API
 
 import express from 'express';
-import routes from './src/routes/index.js';
+import cvRoutes from './src/routes/cvRoute.js';
+import aiEnhance from './src/routes/aiEnhanceRoute.js';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -13,7 +14,8 @@ app.use(express.json());
 // Example: app.use(authMiddleware);
 
 // API Routes
-app.use('/api', routes);
+app.use('/generateCv', cvRoutes);
+app.use('/aiEnhance', aiEnhance);
 
 // Start the server
 app.listen(PORT, () => {
